@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktní formulář</title>
+</head>
+<body>
+
+    <h2>Registrace uživatele</h2>
+
+    <!-- Formulář odesílající data metodou POST do zpracovani.php -->
+    <form action="zpracovani.php" method="POST">
+        
+        <!-- 1. typ inputu: text -->
+        <label for="jmeno">Jméno a příjmení:</label><br>
+        <input type="text" id="jmeno" name="jmeno" required><br><br>
+
+        <!-- 2. typ inputu: email -->
+        <label for="email">E-mailová adresa:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- 3. typ inputu: password (skryté znaky) -->
+        <label for="heslo">Heslo:</label><br>
+        <input type="password" id="heslo" name="heslo" required><br><br>
+
+        <!-- 4. typ inputu: date (výběr data) -->
+        <label for="datum_narozeni">Datum narození:</label><br>
+        <input type="date" id="datum_narozeni" name="datum_narozeni"><br><br>
+
+        <!-- Checkbox pro souhlas -->
+        <input type="checkbox" id="souhlas" name="souhlas" required>
+        <label for="souhlas">Souhlasím se zpracováním osobních údajů</label><br><br>
+
+        <!-- Odesílací tlačítko -->
+        <input type="submit" value="Odeslat formulář">
+        
+    </form>
+
+</body>
+</html>
